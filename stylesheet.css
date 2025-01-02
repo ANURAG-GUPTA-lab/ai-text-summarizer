@@ -1,57 +1,146 @@
+/* General body styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+/* Header styles */
+h1 {
+  text-align: center;
+  color: #007bff;
+  margin-top: 20px;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+/* Container for the main app */
+.container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+/* Styling for text-box */
+.text-box {
+  width: 400px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+/* Styling for textarea elements */
+textarea {
+  height: 300px;
+  resize: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Styling for buttons */
+.submit-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.submit-button:focus {
+  outline: 2px solid #0056b3;
+}
+
+/* Call-to-Action Section */
 .cta-section {
-background-color: #f2f2f2;
-padding: 40px;
+  background-color: #f2f2f2;
+  padding: 40px;
 }
 
 .cta-content {
-justify-content: center;
-display: flex;
-flex-wrap: nowrap;
+  justify-content: center;
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 .cta-text {
-flex-basis: 50%;
-padding-right: 20px;
-}
-
-.container {
-display: flex;
-gap: 10px;
-flex-wrap: wrap;
-justify-content: center;
-margin: 0 auto;
-padding: 20px;
-}
-
-.text-box {
-width: 400px;
-border-radius: 4px;
-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-display: flex;
-flex-direction: column;
-padding: 20px;
-background-color: #ffffff
-}
-
-textarea {
-height: 300px;
-resize: none;
-border: none;
-padding: 10px;
-margin-bottom: 10px;
-}
-
-.submit-button {
-/* Styling for the Summarize button */
+  flex-basis: 50%;
+  padding-right: 20px;
 }
 
 .cta-button {
-/* Styling for the Call-to-action button */
+  display: inline-block;
+  background-color: #28a745;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
 }
 
-/* Additional styles for responsiveness */
-@media (max-width: 768px) {
-.container {
-flex-direction: column;
+.cta-button:hover {
+  background-color: #218838;
 }
+
+.cta-button:focus {
+  outline: 2px solid #218838;
+}
+
+/* Image inside the CTA section */
+.cta-content img {
+  flex-basis: 50%;
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .text-box {
+    width: 90%;
+  }
+
+  .cta-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cta-text {
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
 }
