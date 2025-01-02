@@ -1,52 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Meta tags for character set, viewport, compatibility -->
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Meta tags for character set, viewport, and compatibility -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-<!-- Title and linking the stylesheet -->
-<title>AI Text Summarizer App</title>
-<link rel="stylesheet" href="stylesheet.css">
+  <!-- Page title and linking the stylesheet -->
+  <title>AI Text Summarizer App</title>
+  <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-<!-- App header and introductory paragraphs -->
-<h1>AI Text Summarizer App</h1>
-<p> Welcome to the AI Text Summarizer App! This app leverages the power of Artificial Intelligence APIs to provide concise summaries of long texts...</p>
+  <!-- App header and introductory content -->
+  <header>
+    <h1>AI Text Summarizer App</h1>
+    <p>Welcome to the AI Text Summarizer App! This app leverages the power of Artificial Intelligence APIs to provide concise summaries of long texts. Get started by pasting your text below!</p>
+  </header>
 
-<!-- Text area and Summarize button -->
-<div class="container">
-<div class="text-box">
-<textarea id="text_to_summarize" name="text_to_summarize" placeholder="Paste in some text to summarize. (Min length is 200 chars. Max length is 100,000 chars.)" maxlength="100000"></textarea>
-<button id="submit-button" class="submit-button">
-<span class="submit-button-text">Summarize</span>
-</button>
-</div>
+  <!-- Main application container -->
+  <div class="container">
+    <!-- Input area for text to summarize -->
+    <div class="text-box">
+      <label for="text_to_summarize">Enter text to summarize:</label>
+      <textarea 
+        id="text_to_summarize" 
+        name="text_to_summarize" 
+        placeholder="Paste in some text to summarize. (Min length is 200 chars. Max length is 100,000 chars.)" 
+        maxlength="100000">
+      </textarea>
+      <button id="submit-button" class="submit-button" type="button">
+        Summarize
+      </button>
+    </div>
 
-<!-- Display area for summarized text -->
-<div class="text-box">
-<textarea id="summary" name="summarized_text" placeholder="Summarized text will appear here"></textarea>
-</div>
-</div>
+    <!-- Output area for summarized text -->
+    <div class="text-box">
+      <label for="summary">Summarized text:</label>
+      <textarea 
+        id="summary" 
+        name="summarized_text" 
+        placeholder="Summarized text will appear here" 
+        readonly>
+      </textarea>
+    </div>
+  </div>
 
-<!-- Call-to-action section -->
-<section class="cta-section">
-<!-- Content and a link for further learning -->
-<div class="cta-content">
-<div class="cta-text">
-<h2>Curious how to build this app?</h2>
-<p>Join Postman's Student Program and elevate your software development and API knowledge to help you in your career.</p>
-<a href="https://www.postman.com/student-program/student-expert/?utm_campaign=CGC&utm_medium=referral&utm_source=internal&utm_term=pbl-skilljar&utm_content=pbl_summariser_app" class="cta-button" target="_blank" rel="noopener nofollow">Register as a student</a>
-</div>
+  <!-- Call-to-action section -->
+  <section class="cta-section">
+    <div class="cta-content">
+      <!-- Call-to-action text -->
+      <div class="cta-text">
+        <h2>Curious how to build this app?</h2>
+        <p>Join Postman's Student Program and elevate your software development and API knowledge to help you in your career.</p>
+        <a href="https://www.postman.com/student-program/student-expert/?utm_campaign=CGC&utm_medium=referral&utm_source=internal&utm_term=pbl-skilljar&utm_content=pbl_summariser_app" 
+           class="cta-button" 
+           target="_blank" 
+           rel="noopener nofollow">
+          Register as a student
+        </a>
+      </div>
 
-<!-- Image related to learning -->
-<img src="images/learning.png"></img>
-</div>
-</section>
+      <!-- Image for the call-to-action -->
+      <img src="images/learning.png" alt="Illustration of learning and development">
+    </div>
+  </section>
 
-<!-- Including the script for functionality -->
-<script src="script.js"></script>
+  <!-- Including the script for app functionality -->
+  <script src="script.js"></script>
 </body>
-</html>  
-  
+</html>
