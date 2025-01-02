@@ -12,3 +12,10 @@ This is a web application that uses AI to summarize long texts. Built with Node.
    ```bash
    git clone <repository-url>
    cd ai-text-summarizer
+2. Install dependencies:
+   ```bash
+    npm install   
+3.Start the server:
+
+    node index.js
+Open index.html in your browser to use the app.   
